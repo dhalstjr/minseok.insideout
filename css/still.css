@@ -1,0 +1,49 @@
+.cut-con {
+  margin: 0 auto;
+  margin-top: 10rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.cut-con .cut-list-one,
+.cut-con .cut-list-two {
+  display: flex;
+  gap: 2.5rem;
+  animation: marquee 100s linear infinite; /* 속도를 원하는 대로 조정 */
+}
+
+.cut-con .cut-list-two {
+  animation: marquee-reverse 100s linear infinite;
+}
+
+/* 이미지 스타일 */
+.cut-con li {
+  flex-shrink: 0; /* 이미지 크기를 고정 */
+  width: 41.1rem;
+  height: 28.4rem;
+}
+
+.cut-con li img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 애니메이션 */
+@keyframes marquee {
+  from {
+    transform: translateX(0); /* 시작점 */
+  }
+  to {
+    transform: translateX(-100%); /* 콘텐츠 전체 이동 */
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

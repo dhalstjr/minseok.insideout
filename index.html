@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InsideOut</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src=https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js></script>
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <!--     <script src="./js/jquery-3.3.1.min.js"></script> -->
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/script.js" defer></script></head
+  ><!--  -->
+  <body>
+    <a href="#container" class="skip hidden"></a>
+
+    <!--     <div class="bg">
+      <img src="./img/INSIDEOUT background.png" alt="" />
+    </div> -->
+
+    <header id="header">
+      <h1 class="logo">
+        <a href="#"><i class="hidden">INSIDEOUT</i></a>
+      </h1>
+
+      <div class="hea-tab active">
+        <a href="#"><i class="hidden">tab</i></a>
+      </div>
+
+      <div class="nav-tab">
+        <a href="#" class="close-btn active"></a>
+        <div id="overlay open" class="nav-menu">
+          <div class="nav-content">
+            <div class="nav-box">
+              <ul class="box-con">
+                <li>
+                  <div class="box-title sub1"><a href="#">inside out1</a></div>
+                  <ul class="constituent">
+                    <li><a href="#"><span>관련영상</span></a></li>
+                    <li><a href="#"><span>영화소개</span></a></li>
+                    <li><a href="#"><span>평점</span></a></li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <div class="box-title sub2"><a href="#">inside out2</a></div>
+                  <ul class="constituent">
+                    <li><a href="#"><span>관련영상</span></a></li>
+                    <li><a href="#"><span>영화소개</span></a></li>
+                    <li><a href="#"><span>평점</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="visual">
+        <div class="slide slide1">
+          <figure>
+            <img src="./img/visual1-up.png" alt="인사이드 아웃1 이미지" />
+          </figure>
+          <!--           <div class="text">
+            <h2>Lorem ipsum dolor sit amet,</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+              quibusdam.
+            </p>
+          </div> -->
+        </div>
+
+        <!-- 이미지 2개 돌려쓰기를 위한 HTML -->
+        <div class="slide slide2">
+          <figure>
+            <img src="./img/visual2-up.png" alt="인사이드 아웃2 이미지" />
+          </figure>
+          <!--          <div class="text">
+            <h2>Lorem ipsum dolor sit amet,</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+              quibusdam.
+            </p>
+          </div> -->
+        </div>
+      </section>
+      <!-- end - visual -->
+
+      <section class="movie-clip">
+        <div class="inner">
+          <h3 class="sec-title">Movie-clip</h3>
+          <div class="clip">
+            <div class="clip1 video">
+              <iframe
+                src="https://www.youtube.com/embed/RCW79jGpixM?si=cnEo1DGls1qVBsww"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="clip1 clip-text">
+              <h2>'사춘기 라일리는 처음이지?' 영상</h2>
+              <p>
+                ‘라일리’에게 찾아온 롤러코스터급 감정 변화🎢 그리고 등장한
+                ‘불안’, ‘당황’, ‘따분’, ‘부럽’이!
+              </p>
+            </div>
+          </div>
+
+          <div class="clip clip-flex">
+            <div class="clip2 video">
+              <iframe
+                src="https://www.youtube.com/embed/4xLGIILL_KA?si=NBqc8L7uDVoNbLZm"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="clip2 clip-text">
+              <h2>기쁨이(조이)를 만나보세요!</h2>
+              <p>
+                기쁨이의 목소리를 맡은 에이미 포엘리가 직접 설명하는 인사이드
+                아웃 속 여러 감정들
+              </p>
+            </div>
+          </div>
+          <div class="clip">
+            <div class="clip3 video">
+              <iframe
+                src="https://www.youtube.com/embed/hHGMzNfWXqE?si=_sBdgpmFZv5ell-u"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="clip3 clip-text">
+              <h2>이동욱 '카메오 캐릭터 더빙 비하인드' 영상</h2>
+              <p>
+                '라일리'가 어릴적 좋아하던 게임 캐릭터 '랜스'?! 이동욱 배우의
+                카메오 더빙 프로젝트!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="character">
+        <div class="inner">
+          <div class="cha-title">
+            <h3>character</h3>
+            <p>인사이드 아웃의 모든 감정들을 보고 즐겨보세요!!</p>
+          </div>
+
+          <div class="tab-wrap">
+            <div class="tab-menu">
+              <a href="#" class="tab-all on">ALL</a>
+              <a href="#" class="tab-inside1">INSIDEOUT1</a>
+              <a href="#" class="tab-inside2">INSIDEOUT2</a>
+            </div>
+
+            <div class="tab-con">
+              <div class="cha-slider-wrap">
+                <div class="cha-slider swiper testSlider1">
+                  <ul class="cha-list swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <figure>
+                          <img src="./img/character-joy.png" alt="기쁨" />
+                        </figure>
+                        <dl>
+                          <dt>기쁨</dt>
+                          <dd>JOY</dd>
+                        </dl>
+                        <div class="cha-info joy">
+                          <h3>기쁨</h3>
+                          <strong>JOY</strong>
+                          <p>"세상 모든 문제를 웃음으로 해결하려는 라일리의</p>
+                          <p>햇살같은 에너지 충전기!"</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- li슬라이드 추가 -->
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <figure>
+                          <img src="./img/character-슬픔.png" alt="기쁨" />
+                        </figure>
+                        <dl>
+                          <dt>슬픔</dt>
+                          <dd>SADNESS</dd>
+                        </dl>
+                        <div class="cha-info sad">
+                          <h3>슬픔</h3>
+                          <strong>SADNESS</strong>
+                          <p>"울고 싶을 땐 나를 불러~ 눈물 한 방울로</p>
+                          <p> 진정한 위로를 주는 감정 전문가!"</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- li슬라이드 추가 -->
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <figure>
+                          <img src="./img/character-버럭.png" alt="기쁨" />
+                        </figure>
+                        <dl>
+                          <dt>버럭</dt>
+                          <dd>ANGER</dd>
+                        </dl>
+                        <div class="cha-info anger">
+                          <h3>버럭</h3>
+                          <strong>ANGER</strong>
+                          <p>"내 속은 늘 불타오르지! 불공평한 일이 있으면 </p>
+                          <p>내가 한방울 폭발해줄게!"</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- li슬라이드 추가 -->
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <figure>
+                          <img src="./img/character-까칠.png" alt="기쁨" />
+                        </figure>
+                        <dl>
+                          <dt>까칠</dt>
+                          <dd>DISGUST</dd>
+                        </dl>
+                        <div class="cha-info disgust">
+                          <h3>까칠</h3>
+                          <strong>DISGUST</strong>
+                          <p>"패션, 음식, 사람 뭐든 기준이 높은 라일리의</p>
+                          <p>감각적인 보호막!"</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- li슬라이드 추가 -->
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <figure>
+                          <img src="./img/character-sosim.png" alt="기쁨" />
+                        </figure>
+                        <dl>
+                          <dt>소심</dt>
+                          <dd>FEAR</dd>
+                        </dl>
+                        <div class="cha-info fear">
+                          <h3>소심</h3>
+                          <strong>FEAR</strong>
+                          <p>"안전 제일! 넘어질까, 부딪힐까 고민하며</p>
+                          <p>라일리의 평화를 지키는 겁쟁이 히어로!"</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <button class="btn btn-prev"></button>
+                <button class="btn btn-next"></button>
+              </div>
+
+              <div>
+                <!-- 슬라이더 -->
+                <div class="swiper testSlider testSlider2">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <h2>testSlider 2</h2>
+                      <h3>slide 1</h3>
+                    </div>
+                    <div class="swiper-slide">
+                      <h2>testSlider 2</h2>
+                      <h3>slide 2</h3>
+                    </div>
+                    <div class="swiper-slide">
+                      <h2>testSlider 2</h2>
+                      <h3>slide 3</h3>
+                    </div>
+                    <div class="swiper-slide">
+                      <h2>testSlider 2</h2>
+                      <h3>slide 4</h3>
+                    </div>
+                    <div class="swiper-slide">
+                      <h2>testSlider 2</h2>
+                      <h3>slide 5</h3>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <!-- 슬라이더 -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="movie-famousline">
+        <div class="inner">
+          <div class="quote-con">
+            <p class="quote-line" id="line1">
+              Crying helps me slow down and obsess
+            </p>
+            <p class="quote-line" id="line2">
+              over the weight of life’s problem
+            </p>
+            <p class="quote-line" id="line3">눈물은 날 진정시켜주고</p>
+            <p class="quote-line" id="line4">
+              내 삶의 문제에 집중할 수 있도록 도와줘
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <div class="inner">
+          <div class="re-title">
+            <h3>review</h3>
+          </div>
+
+          <div class="re-con">
+            <div class="re-img">
+              <figure>
+                <img src="./img/review-img.png" alt="인사이드 아웃 사진" />
+              </figure>
+            </div>
+
+            <div class="comment-con">
+              <div class="re-comment one">
+                <div class="comment-name">홍길동</div>
+                <div class="comment-writing">
+                  <p>“어른이 된다는게 이런건가봐 기쁨이 줄어드는거“</p>
+                </div>
+              </div>
+              <div class="re-comment two">
+                <div class="comment-name">홍길동</div>
+                <div class="comment-writing">
+                  <p>내 감정들과 내 자신을 돌아볼 수 있었던 시간</p>
+                </div>
+              </div>
+              <div class="re-comment three">
+                <div class="comment-name">홍길동</div>
+                <div class="comment-writing">
+                  <p>
+                    결국 시작은 '잘 해내야한다'는 불안감. 그냥 좀 못합시다. 뭐
+                    어때요
+                  </p>
+                </div>
+              </div>
+              <div class="re-comment four">
+                <div class="comment-name">홍길동</div>
+                <div class="comment-writing">
+                  <p>이제야 나의 불안을 사랑할 수 있을 것 같다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="still-cut">
+        <div class="still-title">
+          <h3>still-cut</h3>
+        </div>
+
+        <div class="cut-con">
+          <ul class="cut-list-one">
+            <li>
+              <img src="./img/still-cut1.png" alt="인사이드 아웃 스틸컷1" />
+            </li>
+            <li>
+              <img src="./img/still-cut2.png" alt="인사이드 아웃 스틸컷2" />
+            </li>
+            <li>
+              <img src="./img/still-cut3.png" alt="인사이드 아웃 스틸컷3" />
+            </li>
+            <li>
+              <img src="./img/still-cut4.png" alt="인사이드 아웃 스틸컷4" />
+            </li>
+            <li>
+              <img src="./img/still-cut1.png" alt="인사이드 아웃 스틸컷1" />
+            </li>
+            <li>
+              <img src="./img/still-cut2.png" alt="인사이드 아웃 스틸컷2" />
+            </li>
+            <li>
+              <img src="./img/still-cut3.png" alt="인사이드 아웃 스틸컷3" />
+            </li>
+            <li>
+              <img src="./img/still-cut4.png" alt="인사이드 아웃 스틸컷4" />
+            </li>
+          </ul>
+          <ul class="cut-list-two">
+            <li>
+              <img src="./img/still-cut5.png" alt="인사이드 아웃 스틸컷1" />
+            </li>
+            <li>
+              <img src="./img/still-cut6.png" alt="인사이드 아웃 스틸컷2" />
+            </li>
+            <li>
+              <img src="./img/still-cut7.png" alt="인사이드 아웃 스틸컷3" />
+            </li>
+            <li>
+              <img src="./img/still-cut8.png" alt="인사이드 아웃 스틸컷4" />
+            </li>
+            <li>
+              <img src="./img/still-cut5.png" alt="인사이드 아웃 스틸컷1" />
+            </li>
+            <li>
+              <img src="./img/still-cut6.png" alt="인사이드 아웃 스틸컷2" />
+            </li>
+            <li>
+              <img src="./img/still-cut7.png" alt="인사이드 아웃 스틸컷3" />
+            </li>
+            <li>
+              <img src="./img/still-cut8.png" alt="인사이드 아웃 스틸컷4" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="series">
+        <div class="inner">
+          <div class="ser-title">
+            <h3>series</h3>
+          </div>
+
+          <!-- 영상 나올 때 딤처리 -->
+          <div class="dim"></div>
+
+          <!-- 비디오 나오는 곳 -->
+          <div class="video-wrap">
+            <div class="ser-video">
+              <iframe
+                src="https://www.youtube.com/embed/siMuXKu5aZY?si=0l_LW_os1ro4RWiM"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <button class="btn-close" type="button">
+              <i class="hidden">닫기</i>
+            </button>
+          </div>
+
+          <!--           <div class="video-wrap-two">
+            <ul class="video-list">
+              <li data-link="https://youtu.be/siMuXKu5aZY?si=X0Qn74ozId2ZHGcc">
+                <i class="hidden">인사이드아웃 1 메인 예고편</i>
+              </li>
+              <li data-link="https://youtu.be/EiCmnIaj4u8?si=C2PVrcKyDml_JLuh">
+                <i class="hidden">인사이드아웃 2 메인 예고편</i>
+              </li>
+            </ul>
+          </div> -->
+
+          <ul class="ser-con">
+            <!-- 예고편 1 -->
+            <li
+              data-link="https://www.youtube.com/embed/siMuXKu5aZY"
+              class="ser-trailer main-one"
+            >
+              <div class="trailer-text">
+                <h4>insideout1</h4>
+                <strong>메인예고편!!</strong>
+                <p>
+                  모든 사람의 머릿속에 존재하는 감정 컨트롤 본부에서'기쁨'과
+                  '슬픔'이
+                </p>
+                <p>본부를 이탈하면서 라일리의 감정에 큰 변화가 생긴다.</p>
+                <p>
+                  라일리가 행복을 되찾기 위해 두 감정이 험난한 여정을 거쳐
+                  본부로 돌아와야 한다!
+                </p>
+              </div>
+            </li>
+            <!-- 예고편 2 -->
+            <li
+              data-link="https://www.youtube.com/embed/EiCmnIaj4u8"
+              class="ser-trailer main-two"
+            >
+              <div class="trailer-text">
+                <h4>insideout2</h4>
+                <strong>메인예고편!!</strong>
+                <p>불안이 X 당황이 X 부럽이 X 따분이 등장</p>
+                <p>
+                  올여름, NEW 감정들과 함께하는 새로운 라일리 작전이 시작됩니다!
+                </p>
+                <p>인사이드아웃2 '새로운 라일리 작전' 함께할래?</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="endding">
+        <div class="end-con">
+          <div class="pixar"><i class="hidden">디즈니 픽사 이미지</i></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
